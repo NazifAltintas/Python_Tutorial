@@ -1,0 +1,14 @@
+print("hello")
+a=7
+b=8
+d=a+b
+print(d)
+print(d*"naz")
+print("naz"+"d")
+a=6
+b=1
+print(str(a),"rfg",b)
+_hjk=8
+print(_hjk)
+print1=99
+print(print1)
