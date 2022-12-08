@@ -1,6 +1,4 @@
-number=int(input("enter a number"))
-
-if number%3:
-    print("no")
-else:
-    print("yes")
+nazif="nazif"
+for x in range(10):
+    nazif+=str(x);
+print(nazif)
