@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="nazif"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 10:51:14 &#214;S"/>
+        <attribute name="created" value="bmF6aWY7TEFOVElSTjsyMDIyLTEyLTA5OzEwOjA4OjQwIMOWUzsyNDg3"/>
+        <attribute name="edited" value="bmF6aWY7TEFOVElSTjsyMDIyLTEyLTA5OzEwOjUxOjE0IMOWUzsxOzI1OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count, i, j" type="Integer" array="False" size=""/>
+            <declare name="x" type="Boolean" array="False" size=""/>
+            <for variable="i" start="2" end="50" direction="inc" step="1">
+                <assign variable="x" expression="false"/>
+                <for variable="j" start="2" end="i-1" direction="inc" step="1">
+                    <if expression="i%j==0">
+                        <then>
+                            <assign variable="x" expression="true"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="x">
+                    <then>
+                        <output expression="i" newline="True"/>
+                        <output expression="&quot;ASAL DEGIL&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="i" newline="True"/>
+                        <output expression="&quot;ASAL&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
