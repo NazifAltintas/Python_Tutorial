@@ -1,8 +1,8 @@
 ######### Bir kelimenin içindeki sesli harfleri bulan programdır... #########
-"""
+
 sesliler = ['a', 'e', 'i', 'o', 'u']
 
-kelime = input("Bir kelime giriniz :")   # Python
+kelime = input("1Bir kelime giriniz :")   # Python
 
 found =  []
 for harf in kelime :
@@ -34,19 +34,20 @@ sesliler = ['a', 'e', 'i', 'o', 'u']
 
 found = {'a':0}
 found['e'] = 0
+found['u'] = 0
 found['i'] = 0
 found['o'] = 0
-found['u'] = 0
 
-#print(found)
 
-#for kv in found :
-#    print(kv, found[kv])
+print(found)
+
+for kv in found :
+  print(kv, found[kv])
 
 # sorted () dictionary benzeri yapılarda elamanların sıralı olarak getirilmesini saglar
 
-#for k in sorted(found):
-#    print(k, found[k])
+for k in sorted(found):
+   print(k, found[k])
 
 # items()
 
@@ -56,15 +57,15 @@ for k, v in sorted(found.items()):
 
 ######### Bir kelimenin içindeki sesli harfleri bulan programdır... #########
 sesliler = ['a', 'e', 'i', 'o', 'u']
-kelime = input("Sesli harf aranacak kelimeyi giriniz: ")
+kelime = input("2Sesli harf aranacak kelimeyi giriniz: ")
 
 found = {}
 
 found['a'] = 0
 found['e'] = 0
-found['i'] = 0
 found['o'] = 0
 found['u'] = 0
+found['i'] = 0
 
 for harf in kelime:
     if harf in sesliler:
@@ -73,11 +74,11 @@ for harf in kelime:
 for k, v in sorted( found.items() ):
     print(k, 'sesli harfinden', v, 'tane bulundu...')
 
-"""
+
 ######### Bir kelimenin içindeki sesli harfleri bulan programdır... #########
 x = 3
 sesliler = ['a', 'e', 'i', 'o', 'u']
-kelime = input("Sesli harf aranacak kelimeyi giriniz: ")
+kelime = input("3Sesli harf aranacak kelimeyi giriniz: ")
 
 found = {}
 
